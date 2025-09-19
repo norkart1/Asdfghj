@@ -16,77 +16,77 @@ function Gallery() {
             description: 'somthing got here in the description'
         },
         {
-            id: 1,
+            id: 2,
             image: require('../public/assets/gallery-images/2x3_6.jpg').default,
             likes: 5,
             size: '2x3',
             description: 'somthing got here in the description'
         },
         {
-            id: 1,
+            id: 3,
             image: require('../public/assets/gallery-images/1x1_3.png').default,
             likes: 5,
             size: '1x1',
             description: 'somthing got here in the description'
         },
         {
-            id: 1,
+            id: 4,
             image: require('../public/assets/gallery-images/1x1_1.jpg').default,
             likes: 5,
             size: '1x2',
             description: 'somthing got here in the description'
         },
         {
-            id: 1,
+            id: 5,
             image: require('../public/assets/gallery-images/1x1_2.jpg').default,
             likes: 5,
             size: '2x2',
             description: 'somthing got here in the description'
         },
         {
-            id: 1,
+            id: 6,
             image: require('../public/assets/gallery-images/2x2_3.jpg').default,
             likes: 5,
             size: '2x2',
             description: 'somthing got here in the description'
         },
         {
-            id: 1,
+            id: 7,
             image: require('../public/assets/gallery-images/2x2_1.jpg').default,
             likes: 5,
             size: '2x2',
             description: 'somthing got here in the description'
         },
         {
-            id: 1,
+            id: 8,
             image: require('../public/assets/gallery-images/2x3_1.jpg').default,
             likes: 5,
             size: '2x3',
             description: 'somthing got here in the description'
         },
         {
-            id: 1,
+            id: 9,
             image: require('../public/assets/gallery-images/2x3_2.jpg').default,
             likes: 5,
             size: '2x3',
             description: 'somthing got here in the description'
         },
         {
-            id: 1,
+            id: 10,
             image: require('../public/assets/gallery-images/2x3_3.jpg').default,
             likes: 5,
             size: '2x2',
             description: 'somthing got here in the description'
         },
         {
-            id: 1,
+            id: 11,
             image: require('../public/assets/gallery-images/2x3_4.jpg').default,
             likes: 5,
             size: '1x3',
             description: 'somthing got here in the description'
         },
         {
-            id: 1,
+            id: 12,
             image: require('../public/assets/gallery-images/2x3_5.jpg').default,
             likes: 5,
             size: '1x3',
@@ -114,7 +114,7 @@ function Gallery() {
                         images.map((img) => (
                             <article style={getSpanEstimate(img.size)} className={styles.imageContainer} key={img.id}>
                                 {/* <img className={styles.img} src={img.url} alt={img.alt} loading="lazy" /> */}
-                                <Image className={styles.img} src={img.image} layout='responsive' ></Image>
+                                <Image className={styles.img} src={img.image} layout='responsive' alt={`Gallery image ${img.id}`}></Image>
                                 {/* <p className={styles.description}>{img.description}</p> */}
                             </article>
                         ))
